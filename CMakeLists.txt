@@ -8,9 +8,13 @@ find_package(SDL2 REQUIRED)
 include_directories(CPPEngine ${SDL2_INCLUDE_DIRS})
 find_package(OpenGL REQUIRED)
 
+set("BGFX_DIR" "${CMAKE_SOURCE_DIR}/modules/thirdparty/bgfx_cmake/bgfx")
+
 
 add_executable(CPPEngine main.cpp)
 message("Linking: ${SDL2_LIBRARIES}")
+
+add_subdirectory("modules/thirdparty/bgfx_cmake")
 
 target_link_libraries(CPPEngine mingw32)
 target_link_libraries(CPPEngine ${SDL2_LIBRARIES})

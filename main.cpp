@@ -20,8 +20,7 @@ int main(int argc, char* args[])
             0
     );
 
-
-
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_SOFTWARE);
 
     SDL_Event input;
     int r = 0, g = 255, b = 0;
@@ -50,10 +49,6 @@ int main(int argc, char* args[])
                 {
                     std::cout << SDL_GetScancodeName(input.key.keysym.scancode) << " is up"<< std::endl;
                 }
-                //...randomize the renderer's draw color
-                /*r = rand.% 255;
-                g = rand() % 255;
-                b = rand() % 255;*/
             }
 
             SDL_SetRenderDrawColor(renderer, r, g, b, 255);
