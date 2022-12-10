@@ -3,10 +3,9 @@ set(CMAKE_CXX_STANDARD 17)
 project(CPPEngine)
 
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/modules/thirdparty/SDL2-2.26.1)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/modules/thirdparty/SDL2-2.26.1/cmake/)
 find_package(SDL2 REQUIRED)
 
-include(modules/thirdparty/SDL2-2.26.1/sdl2-config.cmake)
 include_directories(CPPEngine ${SDL2_INCLUDE_DIRS})
 
 
