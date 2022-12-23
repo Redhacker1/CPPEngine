@@ -2,8 +2,6 @@
 #include <random>
 #include <iostream>
 #include <chrono>
-#include <SDL_opengl.h>
-#include "GL/gl.h"
 
 
 int main(int argc, char* args[])
