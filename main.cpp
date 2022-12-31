@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <random>
 #include <iostream>
+#include "modules/thirdparty/bgfx_cmake/bgfx/include/bgfx/bgfx.h"
 #include <chrono>
 
 
@@ -8,6 +9,8 @@ int main(int argc, char* args[])
 {
 
     SDL_Init(SDL_INIT_VIDEO);
+
+    bgfx::Init();
 
     SDL_Window *window = SDL_CreateWindow(
             "SDL2Demo",
