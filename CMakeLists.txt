@@ -4,7 +4,7 @@ project(CPPEngine)
 
 
 add_executable(CPPProj Main.cpp)
-add_subdirectory(modules/thirdparty/SDL2-2.26.2)
+add_subdirectory(modules/thirdparty/SDL2lib)
 target_include_directories(CPPProj
         PRIVATE ${SDL2_INCLUDE_DIRS}
         )
