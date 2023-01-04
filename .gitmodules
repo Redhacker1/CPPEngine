@@ -1,4 +1,6 @@
 [submodule "modules/thirdparty/SDL2lib"]
 	url = https://github.com/libsdl-org/SDL
-	branch = SDL2
+	branch = "SDL2"
 	path = modules/thirdparty/SDL2lib
+[submodule "modules\\thirdparty\\SDL2lib"]
+	branch = release-2.26.x
